@@ -1,5 +1,14 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "angularfire",
+  "description": "Angular Firebase Dev Container",
   "features": {
+  },
+  "extensions":[
+    "dbaeumer.vscode-eslint",
+    "Angular.ng-template"
+  ],
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "args": { }
   }
 }
