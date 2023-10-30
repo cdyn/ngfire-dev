@@ -2,12 +2,13 @@
   "name": "angularfire",
   "description": "Angular Firebase Dev Container",
   "features": {
-    
+
   },
   "extensions":[
     "dbaeumer.vscode-eslint",
     "Angular.ng-template",
-    "Ionic.ionic"
+    "Ionic.ionic",
+    "ms-vscode-remote.remote-containers"
   ],
   "build": {
     "dockerfile": "../Dockerfile"
