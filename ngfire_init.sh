@@ -4,13 +4,15 @@ apt-get install -y git gh nodejs npm tree &&
 npm install -g firebase-tools && 
 npm install -g @angular/cli &&
 
-# Log in to Github and prompt the user for the repository to clone
+# Log in to Github, Firebase and prompt the user for the repository to clone
 gh auth login &&
 gh auth setup-git &&
 firebase login &&
-echo "Enter a GitHub repository URL to clone an existing repo: " && 
+echo "Enter a GitHub repository URL to clone an existing repo (leave blank to create ): " && 
 read repo_url && 
-if git clone $repo_url . ; then
+
+# Clone the repository or prompt for a new repo name
+if git clone $repo_url ; then
     # prompt for Angular application root
     echo "Enter the relative path to the Angular application root: " && 
     tree -d
@@ -34,7 +36,7 @@ echo "Enter the relative path to the Angular application root: " &&
 tree -d
 read app_path && 
 cd $app_path &&
-npm install angularfire
+# npm install angularfire &&
 
 # Install the application dependencies
 npm install &&
