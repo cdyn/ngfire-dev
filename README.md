@@ -2,7 +2,7 @@
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cdyn/ngfire-dev)
 
-This is an Angular Firebase dev environment setup and container template that uses the [ubuntu:latest]() base image. This script is designed to either configigure a new angularfire app, or clone an existing project. Also included are dev containers and codespace definitions
+This is an Angular Firebase dev environment setup and container template that uses the [ubuntu:latest](https://hub.docker.com/_/ubuntu/tags) base image. This script is designed to either configigure a new angularfire app, or clone an existing project. Also included are dev containers and codespace definitions
 
 ### Dependencies
 
