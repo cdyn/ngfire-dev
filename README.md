@@ -18,6 +18,16 @@ This is an Angular Firebase dev environment setup and container template that us
 ### Notes
 
 The container setup creates a directory for the repo with the following structure by default
-&emsp;|— __repo__ repo and firbase root
-&emsp;|&emsp;&emsp;|— funcitons /
-&emsp;|&emsp;&emsp;|— public /
+
+&emsp;|— __{repo_name}__ / : *repo and firbase root* <br/>
+&emsp;|&emsp;&emsp;|— __funcitons__ / <br/>
+&emsp;|&emsp;&emsp;|— __public__ / : *client side code* <br/>
+&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __{ng_app_name}__ / <br/>
+&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __dist__ <br/>
+&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __src__ : *app source code*<br/>
+&emsp;|&emsp;&emsp;|— __.firebaserc__ <br/>
+&emsp;|&emsp;&emsp;|— __README.md__ <br/>
+&emsp;|&emsp;&emsp;|— __firebase.json__ <br/>
+&emsp;|&emsp;&emsp;|— __firestore.indexes.json__ <br/>
+&emsp;|&emsp;&emsp;|— __firestore.rules__ <br/>
+&emsp;|&emsp;&emsp;|— __storage.rules__ <br/>
