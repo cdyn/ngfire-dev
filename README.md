@@ -1,6 +1,6 @@
 # ngfire-dev
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cdyn/ngfire-dev)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cdyn/ngfire-dev) &emsp; [![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in%20VS%20Code-a010a0.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/cdyn/ngfire-dev)
 
 This is an Angular Firebase dev environment setup and container template that uses the [ubuntu:latest](https://hub.docker.com/_/ubuntu/tags) base image. This script is designed to either configigure a new angularfire app, or clone an existing project. Also included are dev containers and codespace definitions
 
