@@ -10,28 +10,28 @@ This is an Angular Firebase dev environment setup and container template that us
 
 ### Contents
 
-&emsp;|— __[ngfire_init.sh](https://github.com/cdyn/ngfire-dev/blob/main/ngfire_init.sh)__ : interactive shell script to setup the environment, can be run standalone, run by the dockerfile <br/>
-&emsp;|— __[Dockerfile](https://github.com/cdyn/ngfire-dev/blob/main/Dockerfile)__ : docker container file <br/>
-&emsp;|— __[.devcontainer](https://github.com/cdyn/ngfire-dev/blob/main/.devontainer)__ / <br/>
-&emsp;|&emsp;&emsp;|— __[devcontainer.json](https://github.com/cdyn/ngfire-dev/blob/main/.devontainer/devcontainer.json)__ : dev container configuration <br/>
+<nobr>&emsp;|— __[ngfire_init.sh](https://github.com/cdyn/ngfire-dev/blob/main/ngfire_init.sh)__ : interactive shell script to setup the environment, can be run standalone, run by the dockerfile <br/></nobr>
+<nobr>&emsp;|— __[Dockerfile](https://github.com/cdyn/ngfire-dev/blob/main/Dockerfile)__ : docker container file <br/></nobr>
+<nobr>&emsp;|— __[.devcontainer](https://github.com/cdyn/ngfire-dev/blob/main/.devontainer)__ / <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __[devcontainer.json](https://github.com/cdyn/ngfire-dev/blob/main/.devontainer/devcontainer.json)__ : dev container configuration <br/></nobr>
 
 ### Notes
 
 The container setup buidls a directory for the repo with the following structure by default
 
-&emsp;|— __{repo_name}__ / : *repo and firbase root* <br/>
-&emsp;|&emsp;&emsp;|— __funcitons__ / <br/>
-&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __package.json__ : *npm package file, description of cloud functions code* <br/>
-&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __src__ / <br/>
-&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __index.ts__ : *firebase cloud function source file* <br/>
-&emsp;|&emsp;&emsp;|— __public__ / : *client side code, can support multiple apps* <br/>
-&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __{ng_app_name}__ / : *angular app root* <br/>
-&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __dist__ / <br/>
-&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __{build_name}__ / : *map firebase hosting here*<br/>
-&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __src__ / : *app source code*<br/>
-&emsp;|&emsp;&emsp;|— __.firebaserc__ <br/>
-&emsp;|&emsp;&emsp;|— __README.md__ <br/>
-&emsp;|&emsp;&emsp;|— __firebase.json__ <br/>
-&emsp;|&emsp;&emsp;|— __firestore.indexes.json__ <br/>
-&emsp;|&emsp;&emsp;|— __firestore.rules__ <br/>
-&emsp;|&emsp;&emsp;|— __storage.rules__ <br/>
+<nobr>&emsp;|— __{repo_name}__ / : *repo and firbase root* <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __funcitons__ / <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __package.json__ : *npm package file, description of cloud functions code* <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __src__ / <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __index.ts__ : *firebase cloud function source file* <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __public__ / : *client side code, can support multiple apps* <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __{ng_app_name}__ / : *angular app root* <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __dist__ / <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __{build_name}__ / : *map firebase hosting here*<br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __src__ / : *app source code*<br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __.firebaserc__ <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __README.md__ <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __firebase.json__ <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __firestore.indexes.json__ <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __firestore.rules__ <br/></nobr>
+<nobr>&emsp;|&emsp;&emsp;|— __storage.rules__ <br/></nobr>
