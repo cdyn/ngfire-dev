@@ -38,10 +38,10 @@ else if [! $repo_url] ; then
     cd $repo_name &&
     firebase init &&
     echo "Enter name the Angular app: " 
-    read ng_id &&
+    read app_id &&
     cd "/public" &&
-    ng new $ng_id --skip-git &&
-    cd $ng_id &&
+    ng new $app_id --skip-git &&
+    cd $app_id &&
     npm install @angluar/fire &&
 else
     # bad url
