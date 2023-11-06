@@ -19,36 +19,22 @@ This is an Angular Firebase dev environment setup and container template that us
 
 The container setup buidls a directory for the repo with the following structure by default
 
-<nobr>&emsp;|— __{repo_name}__ / : *repo and firbase root* <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __funcitons__ / <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __package.json__ : *npm package file, description of cloud functions code* <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __src__ / <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __index.ts__ : *firebase cloud function source file* <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __public__ / : *client side code, can support multiple apps* <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __{ng_app_name}__ / : *angular app root* <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __dist__ / <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __{build_name}__ / : *map firebase hosting here*<br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|&emsp;&emsp;|&emsp;&emsp;|— __src__ / : *app source code*<br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __.firebaserc__ <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __README.md__ <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __firebase.json__ <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __firestore.indexes.json__ <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __firestore.rules__ <br/></nobr>
-<nobr>&emsp;|&emsp;&emsp;|— __storage.rules__ <br/></nobr>
-
 ``` bash
 .
-├── {repo_name} # repo and firebase root
-│   ├── functions
-|   │   ├── package.json # npm package file, description of cloud functions code
-|   │   └── src
-|   │       └── index.tx # firebase cloud function source file
-    └── public # client side code, can support multiple apps
-        ├── {app_id} # the name af the angular app
-        |   ├── dist
-            └── src
-    └── ymir
-        ├── dist
-        └── src
-
+└── {repo_name} # repo and firebase root
+    ├── functions
+    │   ├── package.json # npm package file, description of cloud functions code
+    │   └── src
+    │       └── index.tx # firebase cloud function source file
+    ├── public # client side code, can support multiple apps
+    │   └── {app_id} # the name af the angular app
+    │       ├── dist
+    │       │   └── {build_name} # map firebase hosting here to production build
+    │       └── src # app source code
+    ├── .firebaserc
+    ├── README.md
+    ├── firebase.json
+    ├── firestore.indexes.json
+    ├── firestore.rules
+    └── storage.rules
 ```
