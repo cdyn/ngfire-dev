@@ -35,3 +35,20 @@ The container setup buidls a directory for the repo with the following structure
 <nobr>&emsp;|&emsp;&emsp;|— __firestore.indexes.json__ <br/></nobr>
 <nobr>&emsp;|&emsp;&emsp;|— __firestore.rules__ <br/></nobr>
 <nobr>&emsp;|&emsp;&emsp;|— __storage.rules__ <br/></nobr>
+
+``` bash
+.
+├── {repo_name} # repo and firebase root
+│   ├── functions
+|   │   ├── package.json # npm package file, description of cloud functions code
+|   │   └── src
+|   │       └── index.tx # firebase cloud function source file
+    └── public # client side code, can support multiple apps
+        ├── {app_id} # the name af the angular app
+        |   ├── dist
+            └── src
+    └── ymir
+        ├── dist
+        └── src
+
+```
